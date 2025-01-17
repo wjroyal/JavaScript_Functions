@@ -20,6 +20,7 @@ function checkAge(name, age) {
     let oldEnoughMsg = `Congrats ${name}! You can drive!`;
     let tooYoungMsg =  `Sorry ${name}, you need to wait ${16 - age} years until you can drive.`;
 
+
     if (age < 16) {
         console.log(tooYoungMsg)
     } else {
@@ -38,7 +39,7 @@ function oldEnough (age, targetAge) {
 function checkLicense(name, age) {
     let canDrive = oldEnough(age, 16);
     let canHavePermit = oldEnough(age, 15);
-    let canDrink = oldENough(age, 21);
+    let canDrink = oldEnough(age, 21);
 
     if (canDrink) {
         console.log(`${name} can drink. ${name} can also drive. NOT AT THE SAME TIME.`);
